@@ -40,13 +40,19 @@
         <a href="contacts.html" style="display: block; margin-bottom: 20px;">
             Обратная связь
         </a>
+        <a href="service-page.html" style="display: block; margin-bottom: 20px;">
+            Услуги
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О нас
+        </a>
 
 
 
 
-        <!--        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">-->
-        <!--            Быстрый заказ-->
-        <!--        </button>-->
+        <button data-modal="feedbackModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Обратная связь
+        </button>
 
 
         <!--        <code>-->
@@ -68,17 +74,47 @@
 
 
 
-    <div class="modal" id="Modal">
+    <div class="modal" id="feedbackModal">
         <div class="modal__bg modal-bg _close-modal"></div>
         <div class="modal__dialog">
-            <div class="modal__top">
-                <div class="text32 medium-text">
-                    Title
-                </div>
-                <button class="close-btn _close-modal">
-                    <img src="img/close.svg" alt="">
-                </button>
+            <button class="close-btn _close-modal">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.943359 0.893005L22.1566 22.1062" stroke="#CBCBCB" />
+                    <path d="M0.943359 22.107L22.1566 0.893792" stroke="#CBCBCB" />
+                </svg>
+            </button>
+            <div class="text26">
+                Обратная связь
             </div>
+            <form action="" class="modal-form">
+                <div class="fg">
+                    <input type="text" placeholder="Представьтесь">
+                </div>
+                <div class="fg">
+                    <input type="tel" placeholder="Телефон">
+                </div>
+                <div class="fg">
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <div class="fg">
+                    <input type="text" placeholder="Опишите задачу">
+                </div>
+                <div class="m-check">
+                    <input checked type="checkbox">
+                    <label>
+                        <span>
+                        Нажимая кнопку «Обсудить проект», вы соглашаетесь
+                        c <a href="">Политикой конфиденциальности</a>
+                    </span>
+                    </label>
+                </div>
+                <div class="modal-form__nav">
+                    <button class="modal-form__btn m-btn m-btn-black-outline">
+                        <span>Отправить</span>
+                        <span class="_animate-span"></span>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 
