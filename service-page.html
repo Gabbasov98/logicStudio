@@ -42,7 +42,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="header__btn m-btn m-btn-black-outline">
+                            <button data-modal="feedbackModal" class="header__btn m-btn m-btn-black-outline">
                                 <span>Обсудить проект</span>
                                 <span class="_animate-span"></span>
                             </button>
@@ -245,6 +245,50 @@
             </div>
 
         </footer>
+    </div>
+
+    <div class="modal" id="feedbackModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.943359 0.893005L22.1566 22.1062" stroke="#CBCBCB" />
+                    <path d="M0.943359 22.107L22.1566 0.893792" stroke="#CBCBCB" />
+                </svg>
+            </button>
+            <div class="text26">
+                Обратная связь
+            </div>
+            <form action="" class="modal-form">
+                <div class="fg">
+                    <input type="text" placeholder="Представьтесь">
+                </div>
+                <div class="fg">
+                    <input type="tel" placeholder="Телефон">
+                </div>
+                <div class="fg">
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <div class="fg">
+                    <input type="text" placeholder="Опишите задачу">
+                </div>
+                <div class="m-check">
+                    <input checked type="checkbox">
+                    <label>
+                        <span>
+                        Нажимая кнопку «Обсудить проект», вы соглашаетесь
+                        c <a href="">Политикой конфиденциальности</a>
+                    </span>
+                    </label>
+                </div>
+                <div class="modal-form__nav">
+                    <button class="modal-form__btn m-btn m-btn-black-outline">
+                        <span>Отправить</span>
+                        <span class="_animate-span"></span>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="js/libs.min.js"></script>
